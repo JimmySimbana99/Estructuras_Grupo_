@@ -20,7 +20,12 @@ FECHA MODIFICACION: 13/5/2022
 #include "Operaciones.h"
 #include <string.h>
 using namespace std;
-
+/**
+ * @brief Operacion ingresar datos
+ * 
+ * @param msj 
+ * @return char* 
+ */
 char *Operaciones::ingresar(char *msj)
 {
     cout << msj;
@@ -35,7 +40,13 @@ char *Operaciones::ingresar(char *msj)
     dato[i] = '\0';
     return dato;
 }
-
+/**
+ * @brief Operacion identificar datos
+ * 
+ * @param dato 
+ * @return true 
+ * @return false 
+ */
 bool Operaciones::indetificarDato(char *dato)
 {
     string datoC(dato);
@@ -67,7 +78,12 @@ bool Operaciones::indetificarDato(char *dato)
 
     return true;
 }
-
+/**
+ * @brief Operaciones convertir entero
+ * 
+ * @param dato 
+ * @return int 
+ */
 int Operaciones::convertirEntero(char *dato)
 {
 
@@ -77,12 +93,24 @@ int Operaciones::convertirEntero(char *dato)
 
     return int_n;
 }
+/**
+ * @brief Convertir a flotante
+ * 
+ * @param dato 
+ * @return float 
+ */
 float Operaciones::convertirfloat(char *dato)
 {
     float numero;
     numero = stof(dato);
     return numero;
 }
+/**
+ * @brief Convertir a string
+ * 
+ * @param dato 
+ * @return string 
+ */
 string Operaciones::convertirString(char *dato)
 {
     return dato;

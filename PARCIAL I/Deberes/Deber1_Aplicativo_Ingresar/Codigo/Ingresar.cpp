@@ -13,6 +13,11 @@
 #include <string>
 #include <iostream>
 using namespace std;
+/**
+ * @brief  El metodo siguiente hace que se convierta un numero entero en string
+ * 
+ * @param msj 
+ */
 void Ingresar::ingresar(char* msj){
     int numero;
 	string dato;

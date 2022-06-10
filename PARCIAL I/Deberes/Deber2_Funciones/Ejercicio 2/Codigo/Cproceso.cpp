@@ -10,6 +10,12 @@
 	FECHA DE CREACION:        13-05-2022	
 	FECHA DE MODIFICACION:    13-05-2022*/
 #include "Cproceso.h"
+/**
+ * @brief Construct a new Cproceso:: Cproceso object
+ * 
+ * @param numerador 
+ * @param denominador 
+ */
 Cproceso::Cproceso(int numerador,int denominador){
 	this->num=numerador;
 	this->den=denominador;
@@ -26,6 +32,13 @@ int Cproceso::getNum(){
 int Cproceso::getDen(){
 	return den;
 }
+/**
+ * @brief Generar el objeto 
+ * 
+ * @param obj1 
+ * @param obj2 
+ * @return Cproceso 
+ */
 Cproceso Cproceso::racional(Cproceso obj1, Cproceso obj2){
 	int a,b,c,d;
 	a=obj1.getNum();
@@ -36,6 +49,11 @@ Cproceso Cproceso::racional(Cproceso obj1, Cproceso obj2){
 	this->setDen(b*d);
 	return *this;
 }
+/**
+ * @brief Imprime el objeto
+ * 
+ * @param obj 
+ */
 void Cproceso::imprimirObj(Cproceso obj){
 	cout<<obj.getNum()<<"/"<<obj.getDen()<<endl;
 }
