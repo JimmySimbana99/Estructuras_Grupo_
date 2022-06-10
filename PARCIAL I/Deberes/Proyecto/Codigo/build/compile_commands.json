@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/Estructura de Datos/ProyectoFinal/proyecto/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/proyecto_MJ.dir/main.cpp.obj -c \"D:/Estructura de Datos/ProyectoFinal/proyecto/main.cpp\"",
+  "file": "D:/Estructura de Datos/ProyectoFinal/proyecto/main.cpp"
+},
+{
+  "directory": "D:/Estructura de Datos/ProyectoFinal/proyecto/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/proyecto_MJ.dir/Menu.cpp.obj -c \"D:/Estructura de Datos/ProyectoFinal/proyecto/Menu.cpp\"",
+  "file": "D:/Estructura de Datos/ProyectoFinal/proyecto/Menu.cpp"
+},
+{
+  "directory": "D:/Estructura de Datos/ProyectoFinal/proyecto/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/proyecto_MJ.dir/Vehiculo.cpp.obj -c \"D:/Estructura de Datos/ProyectoFinal/proyecto/Vehiculo.cpp\"",
+  "file": "D:/Estructura de Datos/ProyectoFinal/proyecto/Vehiculo.cpp"
+},
+{
+  "directory": "D:/Estructura de Datos/ProyectoFinal/proyecto/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/proyecto_MJ.dir/Mantenimiento.cpp.obj -c \"D:/Estructura de Datos/ProyectoFinal/proyecto/Mantenimiento.cpp\"",
+  "file": "D:/Estructura de Datos/ProyectoFinal/proyecto/Mantenimiento.cpp"
+},
+{
+  "directory": "D:/Estructura de Datos/ProyectoFinal/proyecto/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/proyecto_MJ.dir/Validar.cpp.obj -c \"D:/Estructura de Datos/ProyectoFinal/proyecto/Validar.cpp\"",
+  "file": "D:/Estructura de Datos/ProyectoFinal/proyecto/Validar.cpp"
+},
+{
+  "directory": "D:/Estructura de Datos/ProyectoFinal/proyecto/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/proyecto_MJ.dir/Usuario.cpp.obj -c \"D:/Estructura de Datos/ProyectoFinal/proyecto/Usuario.cpp\"",
+  "file": "D:/Estructura de Datos/ProyectoFinal/proyecto/Usuario.cpp"
+}
+]

@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "functional": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "compare": "cpp",
+        "memory_resource": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "iosfwd": "cpp",
+        "limits": "cpp",
+        "array": "cpp",
+        "memory": "cpp",
+        "istream": "cpp",
+        "ranges": "cpp",
+        "utility": "cpp"
+    }
+}
