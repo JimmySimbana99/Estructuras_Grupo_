@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 #include "Busqueda.h"
 #include "Validar.h"
 
@@ -13,7 +13,7 @@ int main()
     bool repetir = true;
     int dim=0,dato=0;
     while(1){
-    	
+
     system ("cls");
     printf("\t\t===================================\n");
     printf("\t\t\tMENU DE OPCIONES\n");
@@ -25,7 +25,7 @@ int main()
                 repetir = true;
             }
         case 1:
-	
+
     dim=val.validarNumeros("Digite la cantidad de numeros a ingresar: ",5);
     cout<<endl;
     busc.ingresarElementos(dim);
@@ -34,14 +34,14 @@ int main()
     busc.buscarElemento(dato,dim);
             system("pause>nul");
             break;
-    
+
         case 0:
             repetir = false;
             break;
         }
     }
-    
+
     return 0;
-    
+
 }
 
