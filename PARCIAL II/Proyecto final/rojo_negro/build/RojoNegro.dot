@@ -1,0 +1,11 @@
+graph G {
+x0x2116bed1a60[label="9",style=filled,fillcolor=gray];
+x0x2116bed1a60--x0x2116bed1540[arrowhead = normaltee];
+x0x2116bed1a60--x0x2116bed1f70[arrowhead = normaltee];
+x0x2116bed1540[label="9",style=filled,fillcolor=gray];
+x0x2116bed1540--x0x2116bed1eb0[arrowhead = normaltee];
+x0x2116bed1eb0[label="7",style=filled,fillcolor=lightcoral];
+x0x2116bed1eb0--x0x2116bed1d30[arrowhead = normaltee];
+x0x2116bed1d30[label="5",style=filled,fillcolor=lightcoral];
+x0x2116bed1f70[label="90",style=filled,fillcolor=gray];
+}

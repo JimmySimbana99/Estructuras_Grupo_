@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/Dell/Desktop/GrupoTallerEstructuras/rojo_negro/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/rejo_negro.dir/main.cpp.obj -c C:/Users/Dell/Desktop/GrupoTallerEstructuras/rojo_negro/main.cpp",
+  "file": "C:/Users/Dell/Desktop/GrupoTallerEstructuras/rojo_negro/main.cpp"
+},
+{
+  "directory": "C:/Users/Dell/Desktop/GrupoTallerEstructuras/rojo_negro/build",
+  "command": "C:/TDM-GCC-64/bin/g++.exe   -g -o CMakeFiles/rejo_negro.dir/Menu.cpp.obj -c C:/Users/Dell/Desktop/GrupoTallerEstructuras/rojo_negro/Menu.cpp",
+  "file": "C:/Users/Dell/Desktop/GrupoTallerEstructuras/rojo_negro/Menu.cpp"
+}
+]
