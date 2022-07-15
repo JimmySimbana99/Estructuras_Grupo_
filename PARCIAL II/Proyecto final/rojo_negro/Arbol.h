@@ -444,3 +444,12 @@ void Arbol::graficarArbol(Nodo *nodo){
         graficarArbol(nodo->getIzquierdo());
         graficarArbol(nodo->getDerecho());
 }
+void Arbol::inOrden(Nodo *nodo) {
+    if (nodo != nullptr) {
+      inOrden(nodo->getIzquierdo());
+      if (nodo->getDato() != 0)
+      {
+        cout << nodo->getDato() << " ";
+      }
+      inOrden(nodo->getDerecho());
+    }
