@@ -471,3 +471,14 @@ void Arbol::inOrden(Nodo *nodo) {
       }
       inOrden(nodo->getDerecho());
     }
+
+void Arbol::postOrden(Nodo *nodo) {
+    if (nodo != nullptr) {
+      postOrden(nodo->getIzquierdo());
+      postOrden(nodo->getDerecho());
+      if (nodo->getDato() != 0)
+      {
+        cout << nodo->getDato() << " ";
+      }
+    }
+}
