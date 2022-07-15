@@ -415,7 +415,32 @@ void Arbol::generarGrafico(){
     archivo.close();
 
     system("dot.exe -Tpng RojoNegro.dot -o RojoNegro.png");
-
-
 }
 
+void Arbol::graficarArbol(Nodo *nodo){
+    if (nodo == nulo)
+      {
+          return;
+      }
+      if (nodo->getColor())
+        {
+                archivo<<"x"<<nodo<<"[label=\""<<nodo->getDato()<<"\",style=filled,fillcolor=lightcoral];"<<endl;
+    }else{
+                archivo<<"x"<<nodo<<"[label=\""<<nodo->getDato()<<"\",style=filled,fillcolor=gray];"<<endl;
+        }
+
+
+        if (nodo->getIzquierdo() != nulo)
+        {
+
+            archivo<<"x"<<nodo<<"--"<<"x"<<nodo->getIzquierdo()<<"[arrowhead = normaltee];"<<endl;
+        }
+
+        if (nodo->getDerecho() != nulo)
+        {
+            archivo<<"x"<<nodo<<"--"<<"x"<<nodo->getDerecho()<<"[arrowhead = normaltee];"<<endl;
+        }
+
+        graficarArbol(nodo->getIzquierdo());
+        graficarArbol(nodo->getDerecho());
+}
