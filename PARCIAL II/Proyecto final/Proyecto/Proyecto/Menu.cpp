@@ -19,7 +19,14 @@ void Menu::gotoxy(int x, int y) {
 	SetConsoleCursorPosition(hcon, dwPos);
 }
 
-
+/**
+ * @brief Crear menu
+ * 
+ * @param titulo 
+ * @param opciones 
+ * @param nOpciones 
+ * @return int 
+ */
 int Menu::crearMenu(string titulo, string* opciones, int nOpciones) {
 
 	int seleccion = 1, tecla;
@@ -59,7 +66,11 @@ int Menu::crearMenu(string titulo, string* opciones, int nOpciones) {
 	} while (repite);
 	return seleccion;
 }
-
+/**
+ * @brief Menu principal
+ * 
+ * @return int 
+ */
 int Menu::menuPrincipal() {
 	string* opciones = new string[5];
 
@@ -71,7 +82,11 @@ int Menu::menuPrincipal() {
 
 	return crearMenu("Menu principal", opciones, 5);
 }
-
+/**
+ * @brief SubMenu
+ * 
+ * @return int 
+ */
 int Menu::subMenu() {
 	string* opciones = new string[7];
 

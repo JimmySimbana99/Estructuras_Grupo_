@@ -1,5 +1,11 @@
 #include "Imagen.h"
-
+/**
+ * @brief Cargar Imagen
+ * 
+ * @param nombre 
+ * @return true 
+ * @return false 
+ */
 bool Imagen::cargarImagen(string nombre) {
     bool verificador;
     imagen = imread(nombre);
@@ -14,12 +20,18 @@ bool Imagen::cargarImagen(string nombre) {
     }
     return verificador;
 }
-
+/**
+ * @brief Mostrar imagen
+ * 
+ */
 void Imagen::mostrarImagen() {
     imshow("Logo espe", imagen);
     waitKey(0);
 }
-
+/**
+ * @brief Obtener la imagen pixeliada
+ * 
+ */
 void Imagen::obtenerPixeles() {
     int k = 0;
     HWND myconsole = GetConsoleWindow();

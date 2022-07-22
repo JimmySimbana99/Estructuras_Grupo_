@@ -1,11 +1,20 @@
 #include "Usuario.h"
-
+/**
+ * @brief Construct a new Usuario:: Usuario object
+ * 
+ * @param _usuario 
+ * @param _password 
+ */
 Usuario::Usuario(string _usuario, string _password) {
     this->usuario = _usuario;
     this->password = _password;
 }
 
-
+/**
+ * @brief 
+ * 
+ * @return string 
+ */
 string Usuario::getUsuario() {
     return usuario;
 }

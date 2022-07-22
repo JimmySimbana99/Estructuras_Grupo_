@@ -7,7 +7,11 @@ Arbol::Arbol() {
     nulo->setDerecho(nullptr);
     raiz = nulo;
 }
-
+/**
+ * @brief Arbol insertar
+ * 
+ * @param dato 
+ */
 void Arbol::insertar(int dato) {
     Nodo* nuevo = new Nodo(dato);
     nuevo->setPadre(nullptr);
@@ -50,7 +54,14 @@ void Arbol::insertar(int dato) {
 
     arreglar(nuevo);
 }
-
+/**
+ * @brief Arbol buscar
+ * 
+ * @param nodo 
+ * @param valor 
+ * @return true 
+ * @return false 
+ */
 bool Arbol::buscar(Nodo* nodo, int valor) {
     bool verificador;
     if (nodo == nulo || valor == nodo->getDato()) {
@@ -70,7 +81,11 @@ bool Arbol::buscar(Nodo* nodo, int valor) {
     }
     return buscar(nodo->getDerecho(), valor);
 }
-
+/**
+ * @brief Arbol eliminar
+ * 
+ * @param dato 
+ */
 void Arbol::eliminar(int dato) {
     Nodo* z = nulo;
     Nodo* x, * y;
@@ -129,7 +144,11 @@ void Arbol::eliminar(int dato) {
     }
 
 }
-
+/**
+ * @brief Arbol rotar izquierda
+ * 
+ * @param nodo 
+ */
 void Arbol::rotarIzquierda(Nodo* nodo) {
 
     Nodo* y = nodo->getDerecho();
@@ -151,7 +170,11 @@ void Arbol::rotarIzquierda(Nodo* nodo) {
     y->setIzquierdo(nodo);
     nodo->setPadre(y);
 }
-
+/**
+ * @brief Arbol rotar derecha
+ * 
+ * @param nodo 
+ */
 void Arbol::rotarDerecha(Nodo* nodo) {
 
     Nodo* y = nodo->getIzquierdo();
@@ -173,7 +196,11 @@ void Arbol::rotarDerecha(Nodo* nodo) {
     y->setDerecho(nodo);
     nodo->setPadre(y);
 }
-
+/**
+ * @brief Arbol arreglar
+ * 
+ * @param nodo 
+ */
 void Arbol::arreglar(Nodo* nodo) {
 
     Nodo* aux;
@@ -223,7 +250,11 @@ void Arbol::arreglar(Nodo* nodo) {
 
 
 }
-
+/**
+ * @brief Arbol areglar eliminar
+ * 
+ * @param nodo 
+ */
 void Arbol::arreglarEliminar(Nodo* nodo) {
     Nodo* s;
 
@@ -321,7 +352,13 @@ void Arbol::arreglarEliminar(Nodo* nodo) {
 
 // }
 
-
+/**
+ * @brief Mostrar arbol
+ * 
+ * @param raiz 
+ * @param index 
+ * @param last 
+ */
 void Arbol::mostrarArbol(Nodo* raiz, string index, bool last) {
     if (raiz != nulo) {
         cout << index;
@@ -344,7 +381,12 @@ void Arbol::mostrarArbol(Nodo* raiz, string index, bool last) {
 Nodo* Arbol::getRaiz() {
     return raiz;
 }
-
+/**
+ * @brief Arbol intercambiar
+ * 
+ * @param nodo1 
+ * @param nodo2 
+ */
 void Arbol::intercambiar(Nodo* nodo1, Nodo* nodo2) {
 
     if (nodo1->getPadre() == nullptr)
@@ -364,7 +406,12 @@ void Arbol::intercambiar(Nodo* nodo1, Nodo* nodo2) {
 
 
 }
-
+/**
+ * @brief Obtencion minimo
+ * 
+ * @param nodo 
+ * @return Nodo* 
+ */
 Nodo* Arbol::obtenerMinimo(Nodo* nodo) {
 
     while (nodo->getIzquierdo() != nulo)
@@ -375,7 +422,11 @@ Nodo* Arbol::obtenerMinimo(Nodo* nodo) {
     return nodo;
 
 }
-
+/**
+ * @brief Generar grafico de arbol
+ * 
+ * @param nombre 
+ */
 void Arbol::generarGrafico(string nombre) {
 
     cout << "\n";
@@ -395,7 +446,11 @@ void Arbol::generarGrafico(string nombre) {
 
 }
 
-
+/**
+ * @brief Graficar arbol
+ * 
+ * @param nodo 
+ */
 
 void Arbol::graficarArbol(Nodo* nodo) {
     if (nodo == nulo)
@@ -426,7 +481,11 @@ void Arbol::graficarArbol(Nodo* nodo) {
     graficarArbol(nodo->getDerecho());
 }
 
-
+/**
+ * @brief Arbol en preOrden
+ * 
+ * @param nodo 
+ */
 void Arbol::preOrden(Nodo* nodo) {
 
     if (nodo != nullptr) {
@@ -441,7 +500,11 @@ void Arbol::preOrden(Nodo* nodo) {
     }
 
 }
-
+/**
+ * @brief Arbol en Inorden
+ * 
+ * @param nodo 
+ */
 void Arbol::inOrden(Nodo* nodo) {
     if (nodo != nullptr) {
         inOrden(nodo->getIzquierdo());
@@ -452,7 +515,11 @@ void Arbol::inOrden(Nodo* nodo) {
         inOrden(nodo->getDerecho());
     }
 }
-
+/**
+ * @brief Arbol en postOrden
+ * 
+ * @param nodo 
+ */
 void Arbol::postOrden(Nodo* nodo) {
     if (nodo != nullptr) {
         postOrden(nodo->getIzquierdo());
@@ -465,7 +532,10 @@ void Arbol::postOrden(Nodo* nodo) {
 }
 
 
-
+/**
+ * @brief Arbol borrar
+ * 
+ */
 void Arbol::borrarArbol() {
     nulo = new Nodo;
     nulo->setColor(0);
