@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Reinas.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe qc CMakeFiles\Reinas.dir/objects.a @CMakeFiles\Reinas.dir\objects1.rsp
+C:\TDM-GCC-64\bin\x86_64-w64-mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\Reinas.dir/objects.a -Wl,--no-whole-archive -o Reinas.exe -Wl,--out-implib,libReinas.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Reinas.dir\linklibs.rsp
